@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Color Memory Game</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Color Memory Game</h1>
+    <p>
+      The Goal of the game is to remember the order of the button presses then
+      repeat the sequence by clicking the buttons in the same order.
+    </p>
+
+    <p>
+      The pace will increase after every correct sequence. There are a total of
+      9 sequences and you have 3 lives. Losing a life does not reset the current
+      sequence. You also have 9 seconds to complete the current sequence you're on. 
+    </p>
+
+    <p> 
+      Be careful though, because if you run out of time, its Game Over.
+    </p>
+    
+    <p> 
+      Good Luck!
+    </p>
+
+    <button id="Start" onclick="StartGame()">Start Game</button>
+    <button id="Stop" class="hidden" onclick="EndGame()">End Game</button>
+    
+    <div id="countdown"></div>
+
+    <div id="GameButtonArea">
+      <button
+        id="Button1"
+        onclick="guess(1)"
+        onmousedown="startTone(1)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="Button2"
+        onclick="guess(2)"
+        onmousedown="startTone(2)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="Button3"
+        onclick="guess(3)"
+        onmousedown="startTone(3)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="Button4"
+        onclick="guess(4)"
+        onmousedown="startTone(4)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="Button5"
+        onclick="guess(5)"
+        onmousedown="startTone(5)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="Button6"
+        onclick="guess(6)"
+        onmousedown="startTone(6)"
+        onmouseup="stopTone()"
+      ></button>
+    </div>
+  </body>
+</html>
